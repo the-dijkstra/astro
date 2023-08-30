@@ -1,12 +1,12 @@
+import fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 import { markdownConfigDefaults } from '@astrojs/markdown-remark';
 import { toRemarkInitializeAstroData } from '@astrojs/markdown-remark/dist/internal.js';
-import { compile as mdxCompile, type CompileOptions } from '@mdx-js/mdx';
+import { type CompileOptions, compile as mdxCompile } from '@mdx-js/mdx';
 import type { PluggableList } from '@mdx-js/mdx/lib/core.js';
 import type { AstroIntegration, ContentEntryType, HookParameters } from 'astro';
 import astroJSXRenderer from 'astro/jsx/renderer.js';
 import { parse as parseESM } from 'es-module-lexer';
-import fs from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import type { Options as RemarkRehypeOptions } from 'remark-rehype';
 import { SourceMapGenerator } from 'source-map';
 import { VFile } from 'vfile';

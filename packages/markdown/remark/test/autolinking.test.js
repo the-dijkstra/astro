@@ -1,5 +1,5 @@
-import { renderMarkdown } from '../dist/index.js';
 import chai from 'chai';
+import { renderMarkdown } from '../dist/index.js';
 import { mockRenderMarkdownParams } from './test-utils.js';
 
 describe('autolinking', () => {

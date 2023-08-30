@@ -1,6 +1,6 @@
+import os from 'node:os';
 import { prompt } from '@astrojs/cli-kit';
 import arg from 'arg';
-import os from 'node:os';
 import detectPackageManager from 'which-pm-runs';
 
 import { getName, getVersion } from '../messages.js';

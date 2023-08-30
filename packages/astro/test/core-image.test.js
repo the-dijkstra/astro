@@ -1,12 +1,12 @@
-import { expect } from 'chai';
-import * as cheerio from 'cheerio';
 import { basename } from 'node:path';
 import { Writable } from 'node:stream';
+import { expect } from 'chai';
+import * as cheerio from 'cheerio';
 import { removeDir } from '../dist/core/fs/index.js';
+import { Logger } from '../dist/core/logger/core.js';
 import testAdapter from './test-adapter.js';
 import { testImageService } from './test-image-service.js';
 import { loadFixture } from './test-utils.js';
-import { Logger } from '../dist/core/logger/core.js';
 
 describe('astro:image', () => {
 	/** @type {import('./test-utils').Fixture} */

@@ -1,8 +1,8 @@
+import { exec } from 'node:child_process';
 /* eslint no-console: 'off' */
-import { color, say as houston, label, spinner as load } from '@astrojs/cli-kit';
+import { color, label, say as houston, spinner as load } from '@astrojs/cli-kit';
 import { align, sleep } from '@astrojs/cli-kit/utils';
 import fetch from 'node-fetch-native';
-import { exec } from 'node:child_process';
 import stripAnsi from 'strip-ansi';
 import detectPackageManager from 'which-pm-runs';
 import { shell } from './shell.js';

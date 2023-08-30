@@ -1,8 +1,8 @@
 import type { Context } from './context';
 
+import dns from 'node:dns/promises';
 import { color } from '@astrojs/cli-kit';
 import fetch from 'node-fetch-native';
-import dns from 'node:dns/promises';
 import { bannerAbort, error, info, log } from '../messages.js';
 import { getTemplateTarget } from './template.js';
 
