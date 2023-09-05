@@ -1726,8 +1726,7 @@ export interface Page<T = any> {
 }
 
 type OmitIndexSignature<ObjectType> = {
-	// eslint-disable-next-line @typescript-eslint/ban-types
-	[KeyType in
+	[KeyType in // eslint-disable-next-line @typescript-eslint/ban-types
 		keyof ObjectType as {} extends Record<KeyType, unknown> ? never : KeyType]: ObjectType[KeyType];
 };
 // eslint-disable-next-line @typescript-eslint/ban-types
