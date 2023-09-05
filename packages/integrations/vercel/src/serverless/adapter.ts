@@ -1,3 +1,5 @@
+import { basename } from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import type {
 	AstroAdapter,
 	AstroConfig,
@@ -7,9 +9,7 @@ import type {
 } from 'astro';
 import { AstroError } from 'astro/errors';
 import glob from 'fast-glob';
-import { basename } from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
-import { defaultImageConfig, getImageConfig, type VercelImageConfig } from '../image/shared.js';
+import { type VercelImageConfig, defaultImageConfig, getImageConfig } from '../image/shared.js';
 import { exposeEnv } from '../lib/env.js';
 import { getVercelOutput, removeDir, writeJson } from '../lib/fs.js';
 import { copyDependenciesToFunction } from '../lib/nft.js';
