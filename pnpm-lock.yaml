@@ -198,7 +198,7 @@ importers:
         specifier: ^3.0.1
         version: link:../../packages/integrations/react
       '@astrojs/solid-js':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: link:../../packages/integrations/solid
       '@astrojs/svelte':
         specifier: ^4.0.1
@@ -267,7 +267,7 @@ importers:
   examples/framework-solid:
     dependencies:
       '@astrojs/solid-js':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: link:../../packages/integrations/solid
       astro:
         specifier: ^3.0.10
